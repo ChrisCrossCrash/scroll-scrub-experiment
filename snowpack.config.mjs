@@ -10,6 +10,7 @@ export default {
     open: 'none',
   },
   buildOptions: {
-    out: 'dics',
+    out: 'docs',
+    baseUrl: '/scroll-scrub-experiment/docs/',
   },
 }
