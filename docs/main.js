@@ -1,4 +1,4 @@
-import './_snowpack/pkg/modern-normalize.css.proxy.js'
+import './snowpack/pkg/modern-normalize.css.proxy.js'
 import './styles.css.proxy.js'
 
 /** @type {HTMLVideoElement} */

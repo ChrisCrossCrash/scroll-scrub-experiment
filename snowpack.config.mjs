@@ -12,5 +12,6 @@ export default {
   buildOptions: {
     out: 'docs',
     baseUrl: '/scroll-scrub-experiment/',
+    metaUrlPath: 'snowpack',
   },
 }
