@@ -1,3 +1,5 @@
-# Snowpack HTML Starter
+# Scroll Scrub Experiment
 
-A very simple HTML, SCSS, and JS starter. It's a great alternative for using Codepen when you just want to try something simple.
+This is a simple example of a video background that gives the appearance of a parallax effect.
+
+In its current implementation, the video playback position is simply linked to the scroll position of the page. Unfortunately, this leads to large frame drops in all browsers I have tried except for Chromium browsers in Windows.
