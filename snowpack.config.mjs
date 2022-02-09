@@ -11,6 +11,6 @@ export default {
   },
   buildOptions: {
     out: 'docs',
-    baseUrl: '/scroll-scrub-experiment/docs/',
+    baseUrl: '/scroll-scrub-experiment/',
   },
 }

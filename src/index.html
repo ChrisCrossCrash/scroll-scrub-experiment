@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Snowpack HTML Starter</title>
+    <title>Scroll Scrub Experiment</title>
   </head>
   <body>
     <div class="filler">
@@ -15,14 +15,17 @@
       muted
       playsinline
       preload
-      poster="/scroll-vid-poster.jpg"
+      poster="%PUBLIC_URL%/scroll-vid-poster.jpg"
       id="scroll-vid"
     >
-      <source src="%PUBLIC_URL%/scroll-vid-128frames-2KFI.mp4" type="video/mp4" />
+      <source
+        src="%PUBLIC_URL%/scroll-vid-128frames-2KFI.mp4"
+        type="video/mp4"
+      />
     </video>
 
     <div class="filler">
-      <h1>Scroll up ☝</h1>
+      <h1>Scroll up 👆</h1>
     </div>
     <script type="module" src="%PUBLIC_URL%/main.js"></script>
   </body>
