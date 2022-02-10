@@ -1,13 +1,87 @@
-body {
-  background-color: #fff;
-  color: #14181b;
+:root {
+  --dark: #191f23;
+  --light: #fff;
 }
 
-.filler {
+body {
+  background-color: var(--light);
+  color: var(--dark);
+  font-family: Quicksand, sans-serif;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+p {
+  font-weight: 300;
+}
+
+svg {
+  fill: var(--dark);
+}
+
+.filler-bottom {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    max-width: 380px;
+    max-height: 380px;
+    transform: rotate(180deg);
+  }
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+
+  &__text {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+
+    h1 {
+      font-size: min(12vw, 4rem);
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__image {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    max-height: 380px;
+    max-width: 380px;
+    margin: 0 auto;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media (min-width: 650px) {
+  .hero {
+    flex-direction: row;
+  }
 }
 
 #scroll-vid {

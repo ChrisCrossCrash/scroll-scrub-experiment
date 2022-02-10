@@ -4,11 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Scroll Scrub Experiment</title>
   </head>
   <body>
-    <div class="filler">
-      <h1>Scroll down 👇</h1>
+    <div class="hero">
+      <div class="hero__text">
+        <h1>Scroll<br />Scrub<br />Experiment</h1>
+        <p>
+          A simple proof-of-concept for a scroll-linked video playback element
+          that gives the appearance of depth within the page.
+        </p>
+      </div>
+      <div class="hero__image">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+          width="16"
+          height="16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M13.03 8.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.47 9.28a.75.75 0 011.06-1.06l2.97 2.97V3.75a.75.75 0 011.5 0v7.44l2.97-2.97a.75.75 0 011.06 0z"
+          ></path>
+        </svg>
+      </div>
     </div>
 
     <video
@@ -24,8 +51,18 @@
       />
     </video>
 
-    <div class="filler">
-      <h1>Scroll up 👆</h1>
+    <div class="filler-bottom">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 16 16"
+        width="16"
+        height="16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M13.03 8.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.47 9.28a.75.75 0 011.06-1.06l2.97 2.97V3.75a.75.75 0 011.5 0v7.44l2.97-2.97a.75.75 0 011.06 0z"
+        ></path>
+      </svg>
     </div>
     <script type="module" src="%PUBLIC_URL%/main.js"></script>
   </body>
