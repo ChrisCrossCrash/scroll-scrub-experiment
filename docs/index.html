@@ -15,15 +15,15 @@
     <title>Scroll Scrub Experiment</title>
   </head>
   <body>
-    <div class="hero">
-      <div class="hero__text">
+    <div class="info-section">
+      <div class="info-section__text">
         <h1>Scroll<br />Scrub<br />Experiment</h1>
         <p>
           A simple proof-of-concept for a scroll-linked video playback element
           that gives the appearance of depth within the page.
         </p>
       </div>
-      <div class="hero__image">
+      <div class="info-section__image">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 16 16"
@@ -44,6 +44,7 @@
       preload
       poster="/scroll-scrub-experiment/scroll-vid-poster.jpg"
       id="scroll-vid"
+      tabindex="-1"
     >
       <source
         src="/scroll-scrub-experiment/scroll-vid-128frames-2KFI.mp4"
@@ -51,18 +52,31 @@
       />
     </video>
 
-    <div class="filler-bottom">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 16 16"
-        width="16"
-        height="16"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M13.03 8.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.47 9.28a.75.75 0 011.06-1.06l2.97 2.97V3.75a.75.75 0 011.5 0v7.44l2.97-2.97a.75.75 0 011.06 0z"
-        ></path>
-      </svg>
+    <div class="info-section bottom">
+      <div class="info-section__text">
+        <nav>
+          <div>
+            <a href="https://github.com/ChrisCrossCrash/scroll-scrub-experiment"
+              >Source</a
+            >
+          </div>
+          <div><a href="https://www.chriskumm.com">Portfolio</a></div>
+          <div><a href="https://www.chriskumm.com#contact">Portfolio</a></div>
+        </nav>
+      </div>
+      <div class="info-section__image flip-y">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+          width="16"
+          height="16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M13.03 8.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.47 9.28a.75.75 0 011.06-1.06l2.97 2.97V3.75a.75.75 0 011.5 0v7.44l2.97-2.97a.75.75 0 011.06 0z"
+          ></path>
+        </svg>
+      </div>
     </div>
     <script type="module" src="/scroll-scrub-experiment/main.js"></script>
   </body>

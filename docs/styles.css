@@ -7,35 +7,34 @@ body {
   background-color: var(--light);
   color: var(--dark);
   font-family: Quicksand, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/**
+Fix Firefox's bad default outline for non-form elements.
+Firefox issue:
+  https://bugzilla.mozilla.org/show_bug.cgi?id=1708244
+Proposed fix for `tailwindcss` and `modern-normalize`:
+  https://github.com/tailwindlabs/tailwindcss/issues/4769#issuecomment-867728491
+*/
+:focus-visible {
+  outline-style: auto;
 }
 
 h1 {
   font-weight: 500;
 }
 
-p {
-  font-weight: 300;
-}
-
 svg {
   fill: var(--dark);
 }
 
-.filler-bottom {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.filler-bottom svg {
-  width: 100%;
-  height: 100%;
-  max-width: 380px;
-  max-height: 380px;
-  transform: rotate(180deg);
+.flip-y {
+  transform: scaleY(-1);
 }
 
-.hero {
+.info-section {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -44,22 +43,19 @@ svg {
   max-width: 900px;
   margin: 0 auto;
 }
-.hero__text {
+.info-section__text {
   flex: 0.5;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0;
 }
-.hero__text h1 {
+.info-section__text h1 {
   font-size: min(12vw, 4rem);
   text-transform: uppercase;
   margin-bottom: 1.5rem;
 }
-.hero__text p {
-  font-size: 1.5rem;
-}
-.hero__image {
+.info-section__image {
   flex: 1;
   width: 100%;
   height: 100%;
@@ -67,14 +63,31 @@ svg {
   max-width: 380px;
   margin: 0 auto;
 }
-.hero__image svg {
+.info-section__image svg {
   width: 100%;
   height: 100%;
 }
+.info-section.bottom {
+  flex-direction: column-reverse;
+}
+
+nav {
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+nav * {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
 
 @media (min-width: 650px) {
-  .hero {
+  .info-section,
+.info-section.bottom {
     flex-direction: row;
+  }
+
+  nav > * {
+    text-align: start;
   }
 }
 #scroll-vid {
