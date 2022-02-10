@@ -1,1 +1,4 @@
 /node_modules/
+
+# Blender backup files
+*.blend[1-9]
