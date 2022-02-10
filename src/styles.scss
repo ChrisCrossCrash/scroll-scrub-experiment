@@ -11,6 +11,17 @@ body {
   font-weight: 300;
 }
 
+/**
+Fix Firefox's bad default outline for non-form elements.
+Firefox issue:
+  https://bugzilla.mozilla.org/show_bug.cgi?id=1708244
+Proposed fix for `tailwindcss` and `modern-normalize`:
+  https://github.com/tailwindlabs/tailwindcss/issues/4769#issuecomment-867728491
+*/
+:focus-visible {
+  outline-style: auto;
+}
+
 h1 {
   font-weight: 500;
 }
